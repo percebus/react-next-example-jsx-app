@@ -10,7 +10,7 @@
     "standard": "standard --fix pages/**/*.js*",
     "lint:jsx": "npm run next:lint",
     "lint:js": "npm run standard",
-    "lint": "npm run lint:js && npm run lint:jsx",
+    "lint": "npm run lint:js",
     "predev": "npm run lint",
     "dev": "npm run next:dev",
     "prebuild": "npm run lint",
