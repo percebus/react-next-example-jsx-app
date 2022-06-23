@@ -8,14 +8,6 @@ function FirstPost () {
     <Layout>
       <Head>
         <title>First Post</title>
-
-        {/* FIXME: "Error: next/script shouldn't be used inside next/head" */}
-        <Script
-          src='https://connect.facebook.net/en_US/sdk.js'
-          strategy='lazyOnload'
-          onLoad={() =>
-            console.log('script loaded correctly, window.FB has been populated')}
-        />
       </Head>
       <h1>First Post</h1>
       <h2>
@@ -23,6 +15,12 @@ function FirstPost () {
           <a>Back to home</a>
         </Link>
       </h2>
+      <Script
+        src='https://connect.facebook.net/en_US/sdk.js'
+        strategy='lazyOnload'
+        onLoad={() =>
+          console.log('script loaded correctly, window.FB has been populated')}
+      />
     </Layout>
   )
 } export default FirstPost
