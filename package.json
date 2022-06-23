@@ -7,7 +7,7 @@
     "next:dev": "next dev",
     "next:build": "next build",
     "next:start": "next start",
-    "standard": "standard --fix pages/**/*.js*",
+    "standard": "standard --fix *.js pages/**/*.js*",
     "lint:jsx": "npm run next:lint",
     "lint:js": "npm run standard",
     "lint": "npm run lint:js",
@@ -24,7 +24,11 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
     "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "sass": "^1.53.0",
+    "tailwindcss": "^3.1.4"
   }
 }
