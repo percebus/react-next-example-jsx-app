@@ -1,11 +1,19 @@
 {
   "private": true,
   "scripts": {
+    "npm:install:global": "npm install --location=global standard",
+    "setup": "npm run npm:install:global",
     "next:dev": "next dev",
     "next:build": "next build",
     "next:start": "next start",
+    "standard": "standard --fix pages/**/*.js*",
+    "lint:js": "npm run standard",
+    "lint": "npm run lint:js",
+    "predev": "npm run lint",
     "dev": "npm run next:dev",
+    "prebuild": "npm run lint",
     "build": "npm run next:build",
+    "prestart": "npm run lint",
     "start": "npm run next:start"
   },
   "dependencies": {
