@@ -3,12 +3,14 @@
   "scripts": {
     "npm:install:global": "npm install --location=global standard",
     "setup": "npm run npm:install:global",
+    "next:lint": "next lint",
     "next:dev": "next dev",
     "next:build": "next build",
     "next:start": "next start",
     "standard": "standard --fix pages/**/*.js*",
+    "lint:jsx": "npm run next:lint",
     "lint:js": "npm run standard",
-    "lint": "npm run lint:js",
+    "lint": "npm run lint:js && npm run lint:jsx",
     "predev": "npm run lint",
     "dev": "npm run next:dev",
     "prebuild": "npm run lint",
@@ -20,5 +22,9 @@
     "next": "latest",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6"
   }
 }
