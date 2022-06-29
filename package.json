@@ -14,7 +14,7 @@
     "lint": "npm run lint:js && npm run lint:jsx",
     "predev": "npm run lint",
     "dev": "npm run next:dev",
-    "prebuild": "npm run lint",
+    "predist": "npm run lint",
     "dist": "npm run next:build",
     "prepkg": "npm run dist",
     "pkg": "bash scripts/pkg.ba.sh",
