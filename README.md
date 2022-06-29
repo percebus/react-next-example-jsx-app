@@ -8,7 +8,7 @@ SRC: [nextjs.org/learn/...](https://nextjs.org/learn/basics/create-nextjs-app/)
 $> npm run dev
 ```
 
-## `dist/`
+## Build: `dist/`
 
 ```bash
 $> npm run dist
