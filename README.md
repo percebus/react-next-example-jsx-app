@@ -34,4 +34,5 @@ Mainly, it renames `_next` folder to `next` and all the corresponding references
 
 `sed` does not work in some macOS, mainly due to the version.
 
-See [install-gnu-sed-on-mac-osx.sh](https://gist.github.com/andre3k1/e3a1a7133fded5de5a9ee99c87c6fa0d)
+See [Install GNU sed on Mac OS and Set It as Default
+](https://medium.com/@bramblexu/install-gnu-sed-on-mac-os-and-set-it-as-default-7c17ef1b8f64)
