@@ -78,7 +78,7 @@ Which exports the app to a client-side [S]ingle-[P]age-[A]pplication.
 And then
 
 ```bash
-$> $> find ./out/ -type f -exec sed -i 's/_next/next/g' {} \;
+$> find ./out/ -type f -exec sed -i 's/_next/next/g' {} \;
 ```
 
 Which basically renames `_next` `export`-ed folder to `next`, as `chrome-extenson` does NOT like this. 
