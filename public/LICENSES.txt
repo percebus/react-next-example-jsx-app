@@ -1,0 +1,64 @@
+yarn licenses v1.22.19
+├─ 0BSD
+│  └─ tslib@2.4.0
+│     ├─ URL: https://github.com/Microsoft/tslib.git
+│     ├─ VendorName: Microsoft Corp.
+│     └─ VendorUrl: https://www.typescriptlang.org/
+├─ BSD-3-Clause
+│  └─ source-map-js@1.0.2
+│     ├─ URL: https://github.com/7rulnik/source-map-js.git
+│     ├─ VendorName: Valentin 7rulnik Semirulnik
+│     └─ VendorUrl: https://github.com/7rulnik/source-map-js
+├─ CC-BY-4.0
+│  └─ caniuse-lite@1.0.30001361
+│     ├─ URL: https://github.com/browserslist/caniuse-lite.git
+│     ├─ VendorName: Ben Briggs
+│     └─ VendorUrl: http://beneb.info
+├─ ISC
+│  └─ picocolors@1.0.0
+│     ├─ URL: https://github.com/alexeyraspopov/picocolors.git
+│     └─ VendorName: Alexey Raspopov
+└─ MIT
+   ├─ @next/env@12.2.0
+   │  ├─ URL: https://github.com/vercel/next.js
+   │  └─ VendorName: Next.js Team
+   ├─ @next/swc-win32-x64-msvc@12.2.0
+   ├─ @swc/helpers@0.4.2
+   │  ├─ URL: git+https://github.com/swc-project/swc.git
+   │  ├─ VendorName: 강동윤
+   │  └─ VendorUrl: https://swc.rs/
+   ├─ js-tokens@4.0.0
+   │  ├─ URL: https://github.com/lydell/js-tokens.git
+   │  └─ VendorName: Simon Lydell
+   ├─ loose-envify@1.4.0
+   │  ├─ URL: git://github.com/zertosh/loose-envify.git
+   │  ├─ VendorName: Andres Suarez
+   │  └─ VendorUrl: https://github.com/zertosh/loose-envify
+   ├─ nanoid@3.3.4
+   │  ├─ URL: https://github.com/ai/nanoid.git
+   │  └─ VendorName: Andrey Sitnik
+   ├─ next@12.2.0
+   │  ├─ URL: https://github.com/vercel/next.js.git
+   │  └─ VendorUrl: https://nextjs.org/
+   ├─ object-assign@4.1.1
+   │  ├─ URL: https://github.com/sindresorhus/object-assign.git
+   │  ├─ VendorName: Sindre Sorhus
+   │  └─ VendorUrl: sindresorhus.com
+   ├─ postcss@8.4.5
+   │  ├─ URL: https://github.com/postcss/postcss.git
+   │  ├─ VendorName: Andrey Sitnik
+   │  └─ VendorUrl: https://postcss.org/
+   ├─ react-dom@17.0.2
+   │  ├─ URL: https://github.com/facebook/react.git
+   │  └─ VendorUrl: https://reactjs.org/
+   ├─ react@17.0.2
+   │  ├─ URL: https://github.com/facebook/react.git
+   │  └─ VendorUrl: https://reactjs.org/
+   ├─ scheduler@0.20.2
+   │  ├─ URL: https://github.com/facebook/react.git
+   │  └─ VendorUrl: https://reactjs.org/
+   ├─ styled-jsx@5.0.2
+   │  └─ URL: https://github.com/vercel/styled-jsx.git
+   └─ use-sync-external-store@1.1.0
+      └─ URL: https://github.com/facebook/react.git
+Done in 5.36s.

@@ -1,20 +1,25 @@
 {
   "private": true,
   "scripts": {
-    "npm:install:global": "npm install --location=global standard",
+    "npm:install:global": "npm install --location=global yarn",
     "setup": "npm run npm:install:global",
+    "yarn:licenses:list:prod": "yarn licenses list --prod > public/LICENSES.txt",
+    "yarn:licenses:generate-disclaimer:prod": "yarn licenses generate-disclaimer --prod > public/LICENSES.md",
+    "yarn:licenses:prod": "npm run yarn:licenses:list:prod && npm run yarn:licenses:generate-disclaimer:prod",
+    "LICENSES": "npm run yarn:licenses:prod",
     "next:lint": "next lint",
     "lint:jsx": "npm run next:lint",
     "lint:js": "npm run standard",
     "lint": "npm run lint:js && npm run lint:jsx",
     "pre_next": "npm run lint",
-    "_next": "next",    
+    "_next": "next",
     "next:dev": "npm run _next -- dev",
     "next:build": "npm run _next -- build",
     "next:start": "npm run _next -- start",
     "next:export": "npm run _next -- export",
     "standard": "standard --fix *.js components/**/*.js* pages/**/*.js*",
     "dev": "npm run next:dev",
+    "predist": "npm run LICENSES",
     "dist": "npm run next:build",
     "prepkg": "npm run dist",
     "pkg": "bash scripts/pkg.ba.sh",
@@ -31,6 +36,7 @@
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.14",
     "sass": "^1.53.0",
+    "standard": "latest",
     "tailwindcss": "^3.1.4"
   }
 }
