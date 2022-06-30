@@ -63,6 +63,8 @@ See [Install GNU sed on Mac OS and Set It as Default
 
 Similar to our [`react-tic-tac-toe-jsx-app`](https://github.com/percebus/react-tic-tac-toe-jsx-app) ReactJS example, we were able to rapidly make this a `chrome|edge` browser extension by simply adding a [`manifest.json`](./public/manifest.json) inside the [`public/`](./public/) folder
 
+Simply load the generated `out/` folderas an unpacked extension
+
 ### `scripts/pkg.ba.sh`
 
 As mentioned above, since this is a browser-side extension, this cannot use NextJS data-fecth features. To accomplish this, we basically.-
