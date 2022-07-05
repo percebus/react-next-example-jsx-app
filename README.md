@@ -65,6 +65,8 @@ Similar to our [`react-tic-tac-toe-jsx-app`](https://github.com/percebus/react-t
 
 Simply load the generated `out/` folderas an unpacked extension
 
+For more information, see [Helpful Tips for Starting a Next.js Chrome Extension](https://css-tricks.com/nextjs-chrome-extension-starter/)
+
 ### `scripts/pkg.ba.sh`
 
 As mentioned above, since this is a browser-side extension, this cannot use NextJS data-fecth features. To accomplish this, we basically.-
