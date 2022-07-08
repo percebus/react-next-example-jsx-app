@@ -13,12 +13,22 @@ jobs:
     - name: ls
       run: ls -la
     - name: setup
-      run: npm run setup:ci
+      run: npm run setup:ci --if-present
     - name: npm install
       run: npm ci
-    - name: audit
+    - name: npm audit
       run: npm audit
     - name: dist/
       run: npm run dist
+    - name: dist.zip
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist
+        path: dist
     - name: out/
       run: bash scripts/pkg.ba.sh
+    - name: out.zip
+      uses: actions/upload-artifact@v3
+      with:
+        name: out
+        path: out
