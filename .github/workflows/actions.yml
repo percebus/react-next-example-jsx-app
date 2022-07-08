@@ -2,7 +2,7 @@ name: Continuous Integration
 on: 
   push:
   schedule:
-    - chron: '* 0 * * *'
+    - cron: '* 0 * * *'
 jobs:
   Build:
     runs-on: ubuntu-latest
