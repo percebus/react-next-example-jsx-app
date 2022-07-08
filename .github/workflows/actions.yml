@@ -16,6 +16,8 @@ jobs:
       run: npm run setup:ci
     - name: npm install
       run: npm ci
+    - name: audit
+      run: npm audit
     - name: dist/
       run: npm run dist
     - name: out/
