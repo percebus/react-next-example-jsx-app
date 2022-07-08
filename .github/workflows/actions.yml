@@ -1,5 +1,8 @@
 name: Continuous Integration
-on: [push]
+on: 
+  push:
+  schedule:
+    - chron: '* 0 * * *'
 jobs:
   Build:
     runs-on: ubuntu-latest
