@@ -30,15 +30,15 @@ $> npm install
 $> npm run dev
 ```
 
-## Build
+### Build
 
-### `dist/`
+#### `dist/`
 
 ```bash
 $> npm run dist
 ```
 
-### Package: `out/`
+#### Package: `out/`
 
 This process creates a standalone version (w/o server-side rendering) that you can host as a SPA anywhere.
 
@@ -48,13 +48,13 @@ $> npm run pkg
 
 Which is mainly `next export` pls some other things
 
-#### `pkg.ba.sh`
+##### `pkg.ba.sh`
 
 This ensures that `./out` is `chrome-extension` friendly.
 
 Mainly, it renames `_next` folder to `next` and all the corresponding references
 
-#### BUG
+##### BUG
 
 `sed` does not work in some macOS, mainly due to the version.
 
