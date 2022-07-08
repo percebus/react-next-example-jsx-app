@@ -23,10 +23,12 @@ jobs:
     - name: dist.zip
       uses: actions/upload-artifact@v3
       with:
-        path: dist/
+        name: dist
+        path: dist
     - name: out/
       run: bash scripts/pkg.ba.sh
     - name: out.zip
       uses: actions/upload-artifact@v3
       with:
-        path: out/
+        name: out
+        path: out
