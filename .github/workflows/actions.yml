@@ -13,7 +13,7 @@ jobs:
     - name: ls
       run: ls -la
     - name: setup
-      run: npm run setup:ci
+      run: npm run setup:ci --if-present
     - name: npm install
       run: npm ci
     - name: npm audit
