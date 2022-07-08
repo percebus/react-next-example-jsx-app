@@ -1,17 +1,19 @@
-name: Build
+name: Continuous Integration
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: node-16-latest
+  Build:
+    runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
-      - run: ls -la
-      - name: setup
-        run: npm run setup:ci
-      - name: npm install
-        run: npm ci
-      - name: dist
-        run: npm run dist
-      - name: out
-        run: bash scripts/pkg.ba.sh
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: ls -la
+    - name: setup
+      run: npm run setup:ci
+    - name: npm install
+      run: npm ci
+    - name: dist
+      run: npm run dist
+    - name: out
+      run: bash scripts/pkg.ba.sh
