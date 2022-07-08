@@ -3,6 +3,7 @@
   "scripts": {
     "npm:install:global": "npm install --location=global yarn",
     "setup": "npm run npm:install:global",
+    "setup:ci": "npm run setup",
     "yarn:licenses:list:prod": "yarn licenses list --prod > public/LICENSES.txt",
     "yarn:licenses:generate-disclaimer:prod": "yarn licenses generate-disclaimer --prod > public/LICENSES.md",
     "yarn:licenses:prod": "npm run yarn:licenses:list:prod && npm run yarn:licenses:generate-disclaimer:prod",
