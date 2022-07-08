@@ -13,7 +13,7 @@ jobs:
       run: npm run setup:ci
     - name: npm install
       run: npm ci
-    - name: dist
+    - name: dist/
       run: npm run dist
-    - name: out
+    - name: out/
       run: bash scripts/pkg.ba.sh
