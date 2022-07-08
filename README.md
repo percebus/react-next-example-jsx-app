@@ -1,5 +1,7 @@
 # `react-next-tutorials-jsx-app`
 
+[![Continuous Integration](https://github.com/percebus/react-next-tutorials-jsx-app/actions/workflows/actions.yml/badge.svg?branch=main)](https://github.com/percebus/react-next-tutorials-jsx-app/actions/workflows/actions.yml)
+
 SRC: [nextjs.org/learn/...](https://nextjs.org/learn/basics/create-nextjs-app/)
 
 ## History
